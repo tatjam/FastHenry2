@@ -3,7 +3,7 @@
 #  Ken Kundert
 #  UC Berkeley
 #
-CFLAGS = -O -m64
+CFLAGS = -O -DFOUR -m64 -Wno-return-mismatch -Wno-implicit-int -Wno-implicit-function-declaration
 LINTFLAGS = -lc -lm
 SHELL = /bin/sh
 CC = cc

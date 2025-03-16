@@ -91,4 +91,12 @@ double axes[10][2][3];		/* the 2d image of the coordinate axes */
 int up_axis;			/* X,Y or Z => which axis is vertical in pic */
 char *line_file;		/* pointer to .fig superimposed line file */
 char *ps_file_base;		/* pointer to base name for .ps files */
+
+#ifdef FOUR
+struct rusage timestuff;
+#endif
+#ifdef FIVE
+struct tms timestuff;
+#endif
+
 #endif

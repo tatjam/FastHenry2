@@ -31,7 +31,7 @@ is the default.  Most of this code is if'd out for this precond */
  ((nbr)->k == (nk)) && \
  ((nbr)->l == (nl)) )
 
-FILE *fp;
+extern FILE *fp;
 static char outfname[80];
 
 indPrecond(sys, indsys, w)

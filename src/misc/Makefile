@@ -1,4 +1,4 @@
-CFLAGS = -O -DFOUR -m64
+CFLAGS = -O -DFOUR -m64 -Wno-return-mismatch -Wno-implicit-int -Wno-implicit-function-declaration
 
 SHELL = /bin/sh
 RM = /bin/rm

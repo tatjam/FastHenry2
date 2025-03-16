@@ -6,7 +6,7 @@
 #define NOTOTHER 1
 #include <sys/time.h>
 #include <sys/resource.h>
-struct rusage timestuff;
+extern struct rusage timestuff;
 #endif
 
 #ifdef FIVE
@@ -14,7 +14,7 @@ struct rusage timestuff;
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/times.h>
-struct tms timestuff;
+extern struct tms timestuff;
 #endif
 
 /* define macros for time and resident memory usage checks */
